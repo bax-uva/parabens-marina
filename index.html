@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello, WebVR! • A-Frame</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script
+      src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"
+    >
+      </scrifpt>
+          <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js">
+    </script>
+  </head>
+  <body>
+    <!-- scene -->
+    <a-scene>
+      <!-- camera -->
+      <a-entity camera look-controls position="11.3 -2 -3"></a-entity>
+      <a-sky material="src: url(../assets/square-lemon.jpg)"></a-sky>
+      <!-- elements -->
+      <a-entity
+        geometry="primitive: sphere; radius: 2"
+        material="src: url(../assets/stripes.jpeg)"
+        position="6 -2 7"
+      ></a-entity>
+      <a-entity
+        geometry="primitive: sphere; radius: 2"
+        material="color: yellow"
+        position="5 -2 2"
+      ></a-entity>
+
+      <a-entity
+        geometry="primitive: sphere; radius: 2"
+        material="color: red"
+        position="-3 0.8 3.9"
+      ></a-entity>
+      <a-entity
+        geometry="primitive: sphere; radius: 2"
+        material="color: blue"
+        position="0.7 -0.9 -9"
+      ></a-entity>
+    </a-scene>
+  </body>
+</html>
